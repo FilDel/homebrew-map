@@ -27,8 +27,6 @@ class Nangaparbat < Formula
     system "cmake", ".", *std_cmake_args
     system "make"
     system "make", "install"
-
-    prefix.install "tests/dglap_test.cc"
   end
 
   test do
